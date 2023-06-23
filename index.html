@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/334cdc7ef9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>JTGeats</title>
+</head>
+
+<body>
+    <!------------------- HEADER COMPONENT------------------------>
+    <header class="header">
+        <nav class="navbar">
+            <div class="row d-flex container">
+                <a href="" class="logo d-flex">
+                    <img src="../icons/Logo.svg" alt="logo" />
+                </a>
+
+                <ul class="nav-list d-flex">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Menu</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                    <div class="cursor-p close">
+                        <i class="fa-regular fa-x"></i>
+                    </div>
+                </ul>
+
+                <div class="d-flex item">
+                    <a href="" class="search d-flex">
+                        <img src="./icons/Search.svg" alt="search" />
+                    </a>
+                    <div id="cartbtn" class="cart cursor-p d-flex r-position">
+                        <img src="./icons/Cart.svg" alt="cart" />
+                        <div class="notify"></div>
+                    </div>
+                    <div class="hamburger cursor-p">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------  HOME  ------------------------>
+        <div class="home container">
+            <div class="row">
+                <div>
+                    <h1>
+                        Authentic Home <br />
+                        food in India
+                    </h1>
+                    <p>
+                        JTGeats is a courier service in which authentic home cook food is
+                        delivered to a customer.
+                    </p>
+                    <div class="d-flex search-tab">
+                        <input type="text" placeholder="Search food you love" class="search-txt" />
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+                <div class="hero-img-w">
+                    <img src="./icons/cooking.svg" class="hero-img" alt="" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------- HOME KITCHEN COMPONENT ------------------------>
+    <div class="component-container">
+        <div class="container">
+            <h2>Home Kitchen</h2>
+            <div class="productHolder gap grid-item"></div>
+
+            <!---- pizza Items ---->
+        </div>
+    </div>
+
+    <!----------------------- POPULAR ITEMS COMPONENT  ------------------------>
+    <div class="popular-container container d-flex form">
+        <h3 class="popular-items-heading">Popular Items</h3>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <!-- -slider- -->
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <button id="request-dish-btn">Request a Dish</button>
+    </div>
+
+    <!------------------- ---VIDEO COMPONENT ------------------------>
+    <div class="cvideo r-position component-container container d-flex form">
+        <div class="cvideo-extra"></div>
+        <div class="d-flex form">
+            <h3 class="video-header">
+                We are providing best <br />
+                home cooked food delivery service.
+            </h3>
+            <p class="cvideo-paragraph">
+                Away from home and craving the tasty homemade recipes? Choose from a
+                selection of our delicious home cooked dishes
+            </p>
+            <div class="video-container r-position cursor-p">
+                <video src="./video/video.mp4" class="video"></video>
+                <div class="controls">
+                    <div class="green-control-bar">
+                        <div class="green-bar"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="play-pause"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!------------------- FORM COMPONENT ------------------------>
+    <div class="last-component">
+        <div class="container">
+            <div class="row d-flex align-items">
+                <div class="content">
+                    <div>
+                        <h3>
+                            Do you have a question <br />
+                            or want to become a seller?
+                        </h3>
+                        <span>
+                            Fill this form and our manager will contact you next 48 hours.
+                        </span>
+                    </div>
+                    <div class="d-flex col row">
+                        <input type="text" id="input" placeholder="Your Name" />
+                        <input type="text" id="input" placeholder="Your e-mail" />
+                    </div>
+                    <textarea id="input" class="message-height" type="text" placeholder="Your message"></textarea>
+                    <button id="submit-btn">Submit</button>
+                </div>
+                <div class="img">
+                    <img src="./icons/Food delivery illustration.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- FOOTER ------------------------>
+    <footer class="footer">
+        <nav class="footer-navbar">
+            <div class="row d-flex container">
+                <a href="" class="logo d-flex">
+                    <img src="../icons/Logo.svg" alt="logo" />
+                </a>
+
+                <ul class="nav-list d-flex">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Menu</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </ul>
+
+                <div class="d-flex item">
+                    <a href="" style="margin-right:13px">
+                        <img src="./icons/Facebook.svg" alt="search" />
+                    </a>
+                    <div>
+                        <img src="./icons/instagram.svg" alt="cart" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="horizontal-line"></div>
+    </footer>
+    <!------------------- CART COMPONENT------------------------>
+
+    <div class="popup-cart">
+        <div class="popup-content">
+            <div class="popup-cart-img">
+                <img src="./icons/xcart.svg" alt="" />
+            </div>
+            <h1>Cart is Empty</h1>
+            <p>Add some items to the cart to checkout</p>
+            <button class="cursor-p" id="close-button">Back to Menu</button>
+        </div>
+    </div>
+
+    <!------------------- REGISTER CPMPONENT------------------------>
+    <div class="popup-cart" id="popup-request">
+        <div class="popup-register">
+            <h1>Request a Dish</h1>
+            <form class="form">
+                <label class="name">Name* <input type="text" placeholder="Enter name of the dish" /></label>
+                <label class="name">Upload an image <input type="text" placeholder="Paste a url" /></label>
+            </form>
+            <div class="d-flex center">
+                <button class="canclebtn cursor-p">Cancle</button>
+                <button class="registerbtn cursor-p">Submit Request</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript  -->
+    <script src="script.js"></script>
+
+    <!--- SWiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            loop: true,
+            grabCursor: "true",
+            keyboard: {
+                el: ".swiper-slide",
+                enabled: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
